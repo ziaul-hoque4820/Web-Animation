@@ -33,11 +33,18 @@ function loadingAnimation() {
         y: 1600,
         opacity: 0,
         delay: 0.2,
-        duration: 0.5,
+        duration: 0.6,
         ease: Power4
     })
     tl.to('#loader', {
         display: 'none'
+    })
+    tl.from('#nav', {
+        opacity: 0
+    })
+    tl.from('#hero1 h1, #hero2 h1, #hero3 h2, #hero4 h1', {
+        y: 120,
+        stagger: 0.2
     })
 };
 function cursorAnimation() {
