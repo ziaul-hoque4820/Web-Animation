@@ -129,8 +129,7 @@ body {
     overflow: hidden;
     display: flex;
     align-items: center;
-    position: relative;
-    z-index: 9999;
+    /* position: relative; */
 }
 .hero:nth-child(2) {
     margin-top: 18vh;
@@ -141,6 +140,17 @@ body {
     text-transform: uppercase;
     line-height: 7vw;
     line-height: 7.2vw;
+}
+#hero1 h1::before{
+    content: "02";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 400;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    font-family: "Protest Riot", 'Gilroy';
+    left: -10%;
+    top: 11%;
 }
 .hero h2 {
     font-size: 7.2vw;
@@ -208,7 +218,7 @@ body {
     margin-right: 100vh;
     width: 100%;
     /* background-color: #2e2929; */
-    padding-top: 5vh;
+    padding: 7vh 0;
     position: relative;
 }
 #page4-content {
@@ -218,9 +228,21 @@ body {
 #page4-content h1 {
     font-size: 7vw;
     text-transform: uppercase;
+    position: relative;
+}
+#page4-content h1::before{
+    content: "03";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 400;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    font-family: "Protest Riot", 'Gilroy';
+    left: -10%;
+    top: 11%;
 }
 #page4-content .underline {
-    height: 2px;
+    height: 1 px;
     width: 100%;
     background-color: #fff;
     margin: 5vw 0;
@@ -264,4 +286,108 @@ body {
 .blue-div-elem p{
     width: 40%;
     font-size: 0.7vw;
+}
+#page5 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.elem {
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-bottom: 1vw;
+}
+.elem h1 {
+    font-size: 7vw;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 400;
+    color: transparent;
+    text-transform: uppercase;
+    font-family: "Protest Riot", 'Gilroy';
+    display: inline-block;
+    margin-right: 16px;
+    animation-name: lineamime;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes lineamime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX( calc(-100% - 20px));
+    }
+}
+.elem2 {
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-bottom: 1vw;
+}
+.elem2 h1 {
+    font-size: 7vw;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 400;
+    color: transparent;
+    text-transform: uppercase;
+    font-family: "Protest Riot", 'Gilroy';
+    display: inline-block;
+    margin-right: 16px;
+    animation-name: lineamime;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+#footer {
+    height: 85vh;
+    width: 100%;
+    position: relative;
+    padding-left: 28vw;
+}
+#footer h1 {
+    font-size: 7vw;
+    text-transform: uppercase;
+    position: relative;
+}
+#footer h1::before{
+    content: "04";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 400;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    font-family: "Protest Riot", 'Gilroy';
+    left: -10%;
+    top: 8%;
+}
+#footer .underline {
+    height: 1px;
+    width: 100%;
+    background-color: #FFF;
+    margin: 2vw 0;
+}
+#footer-div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 15vw;
+    padding-top: 4vw;
+    margin-bottom: 0vw;
+}
+#footer-div h6 {
+    font-size: 0.9vw;
+    margin-bottom: 1.5vw;
+    font-weight: 500;
+}
+.box {
+    width: 20%;
+}
+#footer-div h5 {
+    font-size: 1.4vw;
+    font-weight: 500;
+}
+#footer>h5 {
+    font-weight: 500;
+    font-size: 1vw;
 }
