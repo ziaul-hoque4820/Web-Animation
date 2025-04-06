@@ -61,3 +61,12 @@ function cursorAnimation() {
 
 loadingAnimation();
 cursorAnimation();
+
+function sheryAnimation() {
+    Shery.imageEffect(".image-div", {
+        style: 6,
+        debug: true,
+        gooey: true,
+    });
+};
+sheryAnimation();
