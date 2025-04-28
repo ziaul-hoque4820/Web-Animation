@@ -241,6 +241,8 @@ body {
 #image-div-container {
     padding: 1vw;
     position: relative;
+    display: flex;
+    gap: 5vw;
 }
 .image-div {
     height: 33vw;
